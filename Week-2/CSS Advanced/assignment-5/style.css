@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    height: 280px;
+    border: 2px solid blue;
+    padding: 5px;
+    background-color: #F0F0F0;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 16pt;
+    font-style: italic;
+    color: blue;
+}
+
+.verse {
+    margin-bottom: 10px;
+}
+
+.yellow {
+    background-color: yellow;
+    float: left;
+    width: 200px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.orange {
+    background-color: orange;
+    position: absolute;
+    top: 200px;
+    width: 200px;
+    padding: 10px;
+    margin-left: 50px;
+}
+
+.orange-red {
+    background-color: rgb(255, 80, 0);
+    color: white;
+    float: right;
+    width: 200px;
+    padding: 10px;
+    margin-right: 40px;
+}
