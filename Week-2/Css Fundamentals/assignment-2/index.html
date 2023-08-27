@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best Selling Video Games</title>
+    <style>
+      :root {
+        --table-color: green;
+        --row-bg-color: #f2f2f2; /* Set your desired row background color */
+      }
+
+      table#game-table {
+        border: 2px solid var(--table-color);
+        text-align: center;
+        height: 200px;
+        width: 400px;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+      }
+
+      table#game-table caption {
+        text-transform: uppercase;
+        background-color: var(--table-color);
+        color: white;
+        padding: 10px;
+      }
+
+      table#game-table th,
+      table#game-table td {
+        /* border: 1px solid #dddddd; */
+        padding: 8px;
+      }
+
+      table#game-table th {
+        background-color: var(--table-color);
+        color: white;
+      }
+
+      table#game-table tr:nth-child(even) {
+        background-color: var(--row-bg-color);
+      }
+    </style>
+  </head>
+  <body>
+    <table id="game-table">
+      <caption>
+        Best Selling Video Games
+      </caption>
+      <tr>
+        <th>Title</th>
+        <th>Sales</th>
+        <th>Release Date</th>
+      </tr>
+      <tr>
+        <td>The Legend of Zelda: Breath of the Wild</td>
+        <td>23.20 million</td>
+        <td>March 3, 2017</td>
+      </tr>
+      <tr>
+        <td>Grand Theft Auto V</td>
+        <td>110 million</td>
+        <td>September 17, 2013</td>
+      </tr>
+      <tr>
+        <td>Minecraft</td>
+        <td>200 million</td>
+        <td>November 18, 2011</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </table>
+  </body>
+</html>
