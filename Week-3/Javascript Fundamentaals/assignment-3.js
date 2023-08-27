@@ -1,12 +1,11 @@
-function isStrongPassword(password){
-    if(password.length<8 || password === 'password'){
-       return false 
-    }
-    for (let i = 0; i < password.length; i++) {
-        if (password[i] === password[i].toUpperCase() && /[A-Z]/.test(password[i])) {
-          return true;
-        }
-    }
+function isStrongPassword(password) {
+  const isLengthValid = password.length >= 8;
+  const containsPassword = password.includes("password");
+  const hasUppercase = /[A-Z]/.test(password);
+  return isLengthValid && !containsPassword && hasUppercase;
 }
 
-isStrongPassword('Test@123')
+console.log(isStrongPassword("Qwerty")); // false - Too short
+console.log(isStrongPassword("passwordQwerty")); // false - Contains "password"
+console.log(isStrongPassword("qwerty123")); // false - No uppercase characters
+console.log(isStrongPassword("Qwerty123")); // true

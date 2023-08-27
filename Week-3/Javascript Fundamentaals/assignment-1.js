@@ -1,17 +1,17 @@
 function divideArray(nums){
     let evenNums = [];
     let oddNums = [];
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]%2 === 0){
-            evenNums.push(nums[i])
+    nums.forEach(num => {
+        if(num % 2 === 0){
+            evenNums.push(num)
         }
         else{
-            oddNums.push(nums[i])
+            oddNums.push(num)
         }
-    }
+    });
     return {
-        "Even Numbers":evenNums.length>0 ? evenNums.sort() :"None",
-        "Odd Numbers":oddNums.length>0 ? oddNums.sort() :"None"
+        "EvenNumbers":evenNums.length>0 ? evenNums.sort() :"None",
+        "OddNumbers":oddNums.length>0 ? oddNums.sort() :"None"
     }
 }
 
