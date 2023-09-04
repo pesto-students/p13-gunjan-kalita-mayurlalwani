@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Object Properties</title>
+  </head>
+  <body>
+    <h1>Window Object Properties</h1>
+
+    <script>
+      // Function to display Window object properties
+      function displayWindowProperties() {
+        // Display user agent string
+        const userAgent = window.navigator.userAgent;
+        console.log('User Agent: ', userAgent);
+
+        // Display screen width and height
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+        console.log(
+          `Screen Width: ${screenWidth}, Screen Height: ${screenHeight}`
+        );
+
+        // Display current URL and path
+        const currentURL = window.location.href;
+        const currentPath = window.location.pathname;
+        console.log('Current URL: ', currentURL);
+        console.log('Current Path: ', currentPath);
+
+        // Store and retrieve data in sessionStorage and localStorage
+        sessionStorage.setItem('sessionData', 'This is session data.');
+        localStorage.setItem('localData', 'This is local data.');
+
+        const sessionData = sessionStorage.getItem('sessionData');
+        const localData = localStorage.getItem('localData');
+
+        console.log('Session Storage Data: ', sessionData);
+        console.log('Local Storage Data: ', localData);
+      }
+
+      // Call the displayWindowProperties() function when the page loads
+      window.onload = displayWindowProperties;
+    </script>
+  </body>
+</html>
